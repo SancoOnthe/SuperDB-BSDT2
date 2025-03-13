@@ -1,0 +1,61 @@
+/* Fuente futurista */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+    background: url('fondo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px cyan;
+    margin-top: 50px;
+}
+
+h3 {
+    color: cyan;
+    text-shadow: 0px 0px 10px cyan;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, cyan, blue);
+    border: none;
+    box-shadow: 0px 0px 10px cyan;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(45deg, blue, cyan);
+    box-shadow: 0px 0px 20px cyan;
+}
+
+.btn-secondary {
+    background: linear-gradient(45deg, magenta, purple);
+    border: none;
+    box-shadow: 0px 0px 10px magenta;
+}
+
+.btn-secondary:hover {
+    background: linear-gradient(45deg, purple, magenta);
+    box-shadow: 0px 0px 20px magenta;
+}
+
+.table {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    box-shadow: 0px 0px 10px cyan;
+}
