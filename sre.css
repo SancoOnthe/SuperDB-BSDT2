@@ -1,0 +1,78 @@
+/* Fuente futurista */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+    background: url('fondo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+/* Contenedor del formulario */
+.container {
+    width: 90%;
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.9); /* Fondo oscuro */
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px cyan;
+    text-align: center;
+}
+
+/* Títulos */
+h2 {
+    color: cyan;
+    text-shadow: 0px 0px 10px cyan;
+    margin-bottom: 15px;
+}
+
+/* Campos de entrada */
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    box-shadow: 0px 0px 5px cyan;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Botón */
+button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(45deg, cyan, blue);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: 0px 0px 10px cyan;
+}
+
+button:hover {
+    background: linear-gradient(45deg, blue, cyan);
+    box-shadow: 0px 0px 20px cyan;
+}
+
+/* Animación de luz */
+@keyframes glow {
+    0% { box-shadow: 0px 0px 10px cyan; }
+    50% { box-shadow: 0px 0px 20px cyan; }
+    100% { box-shadow: 0px 0px 10px cyan; }
+}
+
+.container {
+    animation: glow 2s infinite alternate;
+}
